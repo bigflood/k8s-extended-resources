@@ -19,6 +19,6 @@ if [[ ! -f $KUBECTL_FILE ]] ; then
     chmod 700 $KUBECTL_FILE
 fi
 
-cd -
+cd - > /dev/null
 
 $KUBECTL --kubeconfig $KUBECONFIG $*
